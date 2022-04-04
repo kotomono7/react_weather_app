@@ -1,0 +1,79 @@
+.w-app {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
+
+.w-app:before {
+	content: "";
+	background: url("../assets/app-bg.jpg") no-repeat center center/cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.w-app .w-search {
+	position: relative;
+	text-align: center;
+	padding: 1rem;
+	top: 5%;
+	z-index: 1;
+}
+
+.w-app input {
+	padding: 0.7rem 1.5rem;
+	font-size: 1.2rem;
+	border-radius: 25px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.1);
+	color: #f8f8f8;
+}
+
+::placeholder {
+	color: #f8f8f8;
+}
+
+.w-container {
+	max-width: 700px;
+	height: auto;
+	margin: auto;
+	padding: 0 1.5rem;
+	position: relative;
+	top: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.w-app .w-top {
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.w-app .w-desc {
+	position: relative;
+	right: -95%;
+	margin-top: -20px;
+	transform-origin: 0 0;
+	transform: rotate(269deg);
+}
+
+.w-app .w-bottom {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 12px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.w-bold {
+	font-weight: 700;
+}
